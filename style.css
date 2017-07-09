@@ -8,8 +8,8 @@ html {
 }
 
 body {
-  background-color: #fff;
-  color: #32286c;
+  background-color: #75d683;
+  color: #271149;
   font-family: "aktiv-grotesk", "helvetica neue", helvetica, arial, sans-serif;
   width: 100%;
   height: 100%;
@@ -19,7 +19,7 @@ body {
 
 /* Layout */
 aside {
-  background: #32286c url("img/vhs.gif") no-repeat;
+  background: #271149 url("img/bg.jpg") no-repeat;
   background-position: center center;
   background-size: cover;
   padding: 7%;
