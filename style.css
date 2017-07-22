@@ -8,8 +8,8 @@ html {
 }
 
 body {
-  background-color: #fff;
-  color: #222;
+  background-color: white;
+  color: black;
   font-family: "aktiv-grotesk", "helvetica neue", helvetica, arial, sans-serif;
   width: 100%;
   height: 100%;
@@ -19,13 +19,11 @@ body {
 
 /* Layout */
 aside {
-  background: #222 url("img/bg.jpg") no-repeat;
-  background-position: center center;
-  background-size: cover;
   padding: 7%;
 }
 
 article {
+  color: #222;
   float: left;
   width: 86%;
   height: 10%;
@@ -47,11 +45,6 @@ article {
 }
 
 /* Typography */
-h1 {
-  font-size: 2rem;
-  line-height: 1;
-}
-
 p {
   margin-bottom: 1.5rem;
   max-width: 30em;
@@ -96,6 +89,8 @@ a:hover:before {
 .logomark {
   height: 32px;
   width: 32px;
+  float: left;
+  margin-right: .5em;
 
   /* Sharpen logo edges */
   image-rendering: optimizeSpeed;
@@ -105,25 +100,34 @@ a:hover:before {
   image-rendering: -moz-crisp-edges;
   image-rendering: -o-crisp-edges;
   -ms-interpolation-mode: nearest-neighbor;
+}
 
-  /* Invert logo color */
-  -webkit-filter: invert(100%);
-  filter: invert(100%);
+h1 {
+  font-size: 14px;
+  line-height: 1.2;
+  margin: 0;
+  font-weight: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Footer */
+footer {
+  font-size: 14px;
+  opacity: .5;
+}
+
+/* Seperator */
+.sep {
+  margin: 0 .25rem;
 }
 
 .avatar {
   border-radius: 100%;
 }
 
-/* Footer */
-footer {
-  opacity: .5;
-  font-size: .8rem;
-}
-
-/* Seperator */
-.sep {
-  margin: 0 .25rem;
+.credits {
+  display: none;
 }
 
 /* Adapt layout for larger screens */
@@ -133,6 +137,8 @@ footer {
   }
 
   aside {
+    background: white url("img/animation.gif") no-repeat;
+    background-size: cover;
     background-position: bottom center;
     box-sizing: border-box;
     display: block;
@@ -145,6 +151,17 @@ footer {
     bottom: 0;
     left: 0;
     right: 50%;
+    /* Invert colors */
+    -webkit-filter: invert(100%);
+    filter: invert(100%);
+  }
+
+  .credits {
+    display: block;
+    font-size: 14px;
+    position: fixed;
+    bottom: 7%;
+    left: 7%;
   }
 
   article {
