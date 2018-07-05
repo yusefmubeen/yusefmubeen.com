@@ -175,7 +175,7 @@ footer {
   }
 
   aside {
-    background: gray url("img/animation.gif") no-repeat;
+    background: url("img/animation.gif") no-repeat;
     background-position: bottom center;
     background-size: cover;
     bottom: 0;
