@@ -175,8 +175,8 @@ footer {
   }
 
   aside {
-    background: url("img/animation.gif") no-repeat;
-    background-position: bottom center;
+    background: #414952 url("img/bg.jpg") no-repeat;
+    background-position: center center;
     background-size: cover;
     bottom: 0;
     box-sizing: border-box;
@@ -192,9 +192,13 @@ footer {
   }
 
   .logomark {
-    /* Invert colors
+    /* Invert colors */
     -webkit-filter: invert(100%);
-    filter: invert(100%); */
+    filter: invert(100%);
+  }
+
+  h1 {
+    color: white;
   }
 
   article {
