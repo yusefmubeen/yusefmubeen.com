@@ -115,12 +115,11 @@ h1 {
 }
 
 .button {
-  background-color: blue;
+  background-color: black;
   color: white;
   display: inline-block;
   margin: 1em 0;
   padding: 1em 2em;
-  border: 2px solid blue;
   text-transform: uppercase;
   font-weight: bold;
   letter-spacing: 2px;
@@ -130,8 +129,8 @@ h1 {
 }
 
 .button:hover {
-  background-color: darkblue;
-  border-color: darkblue;
+  background-color: darkgray;
+  border-color: darkgray;
 }
 
 .button-outline {
@@ -175,7 +174,7 @@ footer {
   }
 
   aside {
-    background: #414952 url("img/bg.jpg") no-repeat;
+    background: black url("img/bg.jpg") no-repeat;
     background-position: center center;
     background-size: cover;
     bottom: 0;
