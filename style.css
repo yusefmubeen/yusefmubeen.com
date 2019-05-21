@@ -23,6 +23,7 @@ header {
   background-position: center center;
   background-size: cover;
   bottom: 0;
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
   height: 50vh;
 }
@@ -80,7 +81,10 @@ footer a:before {
   margin: 0 0 -2px;
   position: absolute;
   -webkit-transform: scaleX(0);
+  -ms-transform: scaleX(0);
   transform: scaleX(0);
+  -webkit-transition: all 300ms ease-in-out 0s;
+  -o-transition: all 300ms ease-in-out 0s;
   transition: all 300ms ease-in-out 0s;
   -webkit-transition-delay: 0s;
   visibility: hidden;
@@ -89,6 +93,7 @@ footer a:before {
 
 footer a:hover:before {
   -webkit-transform: scaleX(1);
+  -ms-transform: scaleX(1);
   transform: scaleX(1);
   visibility: visible;
 }
@@ -100,8 +105,15 @@ footer a:hover:before {
   margin-right: .5em;
   width: 32px;
 
+  /* Invert image color */
+  -webkit-filter: invert(100%);
+  filter: invert(100%);
+
+  mix-blend-mode: exclusion;
+
   /* Sharpen logo edges */
   image-rendering: optimizeSpeed;
+  image-rendering: -o-pixelated;
   image-rendering: pixelated;
   image-rendering: optimize-contrast;
   image-rendering: -webkit-optimize-contrast;
@@ -118,6 +130,7 @@ h1 {
   margin: 0;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  color: white;
 }
 
 .button {
@@ -131,6 +144,7 @@ h1 {
   letter-spacing: 2px;
   font-size: 70%;
   -webkit-transition: all .3s; /* Safari */
+  -o-transition: all .3s;
   transition: all .3s;
 }
 
@@ -150,6 +164,7 @@ h1 {
   letter-spacing: 2px;
   font-size: 70%;
   -webkit-transition: all .3s; /* Safari */
+  -o-transition: all .3s;
   transition: all .3s;
 }
 
@@ -203,7 +218,17 @@ footer {
   }
 }
 
+
+@media screen and (min-width : 768px), screen and (min-height : 960px) {
+
+  h1 {
+    color: black;
+  }
+
+}
+
 @media screen and (min-width : 768px) and (min-height : 768px) {
+
   footer {
     color: gray;
     font-size: 14px;
