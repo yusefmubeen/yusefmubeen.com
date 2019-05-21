@@ -1,7 +1,4 @@
 # robotstxt.org/
 
-User-agent: Googlebot-Image
-Disallow: /
-
-User-agent: ia_archiver
+User-agent: *
 Disallow: /
