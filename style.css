@@ -19,7 +19,8 @@ body {
 /* Layout */
 header {
   padding: 7%;
-  background: black url("img/bg.jpg") no-repeat;
+  background-image: url("img/bg.jpg");
+  background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
   bottom: 0;
@@ -109,8 +110,6 @@ footer a:hover:before {
   -webkit-filter: invert(100%);
   filter: invert(100%);
 
-  mix-blend-mode: exclusion;
-
   /* Sharpen logo edges */
   image-rendering: optimizeSpeed;
   image-rendering: -o-pixelated;
@@ -133,12 +132,13 @@ h1 {
   color: white;
 }
 
+
 .button {
-  background-color: white;
-  color: black;
+  color: white;
   display: inline-block;
   margin: 1em 0;
   padding: 1em 2em;
+  border: 2px solid white;
   text-transform: uppercase;
   font-weight: bold;
   letter-spacing: 2px;
@@ -149,28 +149,8 @@ h1 {
 }
 
 .button:hover {
-  background-color: darkgray;
-  border-color: darkgray;
-}
-
-.button-outline {
-  color: gray;
-  display: inline-block;
-  margin: 1em 0;
-  padding: 1em 2em;
-  border: 2px solid gray;
-  text-transform: uppercase;
-  font-weight: bold;
-  letter-spacing: 2px;
-  font-size: 70%;
-  -webkit-transition: all .3s; /* Safari */
-  -o-transition: all .3s;
-  transition: all .3s;
-}
-
-.button-outline:hover {
-  color: white;
-  background-color: gray;
+  color: black;
+  background-color: white;
 }
 
 /* Footer */
@@ -217,6 +197,12 @@ footer {
 
 
 @media screen and (min-width : 480px), screen and (min-height : 960px) {
+
+  .logomark {
+    /* Revert image color */
+    -webkit-filter: invert(0);
+    filter: invert(0);
+  }
 
   h1 {
     color: black;
