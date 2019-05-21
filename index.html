@@ -5,9 +5,9 @@
 	<meta http-equiv="x-ua-compatible" content="ie=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Yusef Mubeen</title>
-	<meta name="description" content="Yusef Mubeen is an independent digital designer and front-end developer based in Copenhagen.">
-	<meta property="og:title" content="Digital Design &amp; Development by Yusef Mubeen">
-	<meta property="og:description" content="Yusef Mubeen is an independent digital designer and front-end developer based in Copenhagen.">
+	<meta name="description" content="Yusef Mubeen is an independent Digital Designer & Consultant based in Copenhagen.">
+	<meta property="og:title" content="Digital Design &amp; Consultancy by Yusef Mubeen">
+	<meta property="og:description" content="Yusef Mubeen is an independent Digital Designer & Consultant based in Copenhagen.">
 	<meta property="og:url" content="https://yusefmubeen.com">
 	<meta property="og:site_name" content="Yusef Mubeen">
 	<meta property="og:type" content="website">
@@ -26,33 +26,59 @@
 	</script>
 </head>
 <body>
-	<aside>
+
+	<header>
 		<img class="logomark" src="img/logomark.gif" alt="">
-		<h1><strong>Yusef Mubeen</strong><br> Digital Design</h1>
-	</aside>
-	<article role="main">
-		<div class="content">
-			<p>I'm <strong>Yusef Mubeen</strong>, an independent <strong>digital designer</strong> born and based in wonderful <strong>Copenhagen</strong>.</p>
+		<h1><strong>Yusef Mubeen</strong><br> Full-stack Designer</h1>
+	</header>
 
-			<p>My work is focused on building classy websites, applications and products for my clients worldwide.</p>
+	<main>
+    <article>
 
-			<p>Feel free to get in touch if you'd like to discuss a project or request my portfolio.</p>
-			<p>
-				<a class="button" href="mailto:yusef.mubeen@gmail.com">yusef.mubeen [at] gmail.com</a>
-			</p>
-		</div>
-		<footer>
-			<a href="https://www.linkedin.com/in/yusefmubeen/" title="LinkedIn">LinkedIn</a> <span class="sep">|</span> <a href="https://twitter.com/yusefmubeen" title="Twitter">Twitter	</a> <span class="sep">|</span> <a href="https://github.com/yusefmubeen/yusefmubeen.com" title="GitHub">Source</a> <span class="hide-on-small"></span>
-		</footer>
-	</article>
-	<script>
-		(function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
-			function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
-		e=o.createElement(i);r=o.getElementsByTagName(i)[0];
-		e.src='//www.google-analytics.com/analytics.js';
-		r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
-		ga('create','UA-27723361-1','auto');ga('send','pageview');
-		setTimeout("_gaq.push(['_trackEvent', '15 seconds on page', 'Read']);", 15000);
-	</script>
+      <p><strong>Hello, I'm Yusef</strong><br> I do <span id="type">ux/ui design</span></p>
+
+     <p>Get in touch if you'd like to discuss a project or request my portfolio.</p>
+
+     <p><a class="button" href="mailto:yusef.mubeen@gmail.com">Contact me</a></p>
+  </article>
+
+   <footer>
+     <a href="https://www.linkedin.com/in/yusefmubeen/" title="LinkedIn">LinkedIn</a> <span class="sep">|</span> <a href="https://github.com/yusefmubeen/yusefmubeen.com" title="GitHub">Source</a> <span class="hide-on-small"></span>
+   </footer>
+ </main>
+
+<script src="/js/yusefmubeen.js"></script>
+<script>
+  var app = document.getElementById('type');
+
+var typewriter = new Typewriter(app, {
+    loop: true
+});
+
+typewriter.typeString('ux/ui design')
+    .pauseFor(1500)
+    .deleteAll()
+    .typeString('web development')
+    .pauseFor(1500)
+    .deleteChars(11)
+    .typeString('apps')
+    .pauseFor(1500)
+    .deleteAll()
+    .typeString('e-commerce')
+    .pauseFor(1500)
+    .deleteAll()
+    .typeString('prototyping')
+    .pauseFor(1500)
+    .start();
+  </script>
+<script>
+  (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+   function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+  e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+  e.src='//www.google-analytics.com/analytics.js';
+  r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+  ga('create','UA-27723361-1','auto');ga('send','pageview');
+  setTimeout("_gaq.push(['_trackEvent', '15 seconds on page', 'Read']);", 15000);
+</script>
 </body>
 </html>
