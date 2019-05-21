@@ -188,7 +188,7 @@ footer {
   display: none;
 }
 
-@media screen and (min-width : 768px) {
+@media screen and (min-width : 480px) {
   html {
     font-size: 24px;
   }
@@ -219,7 +219,7 @@ footer {
 }
 
 
-@media screen and (min-width : 768px), screen and (min-height : 960px) {
+@media screen and (min-width : 480px), screen and (min-height : 960px) {
 
   h1 {
     color: black;
@@ -227,7 +227,7 @@ footer {
 
 }
 
-@media screen and (min-width : 768px) and (min-height : 768px) {
+@media screen and (min-width : 480px) and (min-height : 768px) {
 
   footer {
     color: gray;
