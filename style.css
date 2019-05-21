@@ -189,9 +189,6 @@ footer {
 }
 
 @media screen and (min-width : 480px) {
-  html {
-    font-size: 24px;
-  }
 
   header {
     float: left;
@@ -240,5 +237,11 @@ footer {
 
   .hide-on-small {
     display: inline;
+  }
+}
+
+@media screen and (min-width : 768px) {
+  html {
+    font-size: 24px;
   }
 }
