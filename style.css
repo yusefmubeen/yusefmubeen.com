@@ -37,10 +37,6 @@ main {
   width: 86%;
 }
 
-.avatar {
-  border-radius: 100%;
-}
-
 /* Hide content while web fonts are loading */
 .wf-loading main {
   opacity: 0;
