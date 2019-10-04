@@ -149,6 +149,36 @@ h1 {
   background-color: white;
 }
 
+
+/* Form elements */
+
+input, button {
+  display: block;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+button.button {
+  background: white;
+  color: black;
+  border-radius: 0;
+  outline: 0;
+  cursor: pointer;
+  -webkit-appearance: none;
+}
+
+input {
+  padding: 1em;
+  margin: 1em 0;
+  border: 2px solid #222;
+  border-radius: 0;
+  font-size: 70%;
+  outline: 0;
+  background: #222;
+  color: white;
+  -webkit-appearance: none;
+}
+
 /* Footer */
 footer {
   display: none;
@@ -226,4 +256,14 @@ footer {
   html {
     font-size: 24px;
   }
+
+  input, button {
+    display: inline-block;
+    width: auto;
+  }
+
+}
+
+#motherland header {
+  background-image: url("img/bg-motherland.jpg");
 }
