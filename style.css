@@ -227,16 +227,3 @@ footer {
     font-size: 24px;
   }
 }
-
-#thanks header {
-  background-image: url("img/bg-alt.jpg");
-}
-
-#thanks .logomark {
-  -webkit-filter: invert(100%);
-    filter: invert(100%);
-}
-
-#thanks h1 {
-  color: white;
-}
