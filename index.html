@@ -26,44 +26,35 @@
 		})(document);
 	</script>
 </head>
-<body id="index">
+<body id="motherland">
 
 	<header>
-		<img class="logomark" src="img/logomark.gif" alt="">
+		<a href="/"><img class="logomark" src="img/logomark.gif" alt=""></a>
 		<h1><strong>Yusef Mubeen</strong><br> Copenhagen, DK</h1>
 	</header>
 
 	<main>
     <article>
-      <p><strong>I'm Yusef</strong><br> A designer who makes <span id="type">photographs</span></p>
-      <p><a class="button" href="mailto:yusef.mubeen@gmail.com">Contact me</a></p>
+      <p><strong>I'm making a book!</strong><br> Be the first to know about my photo book project. Sign up for the early release.</p>
+
+      <form
+        action="https://buttondown.email/api/emails/embed-subscribe/mubeen"
+        method="post"
+        target="popupwindow"
+        onsubmit="window.open('https://buttondown.email/mubeen', 'popupwindow')"
+        class="embeddable-buttondown-form"
+      >
+        <input type="email" name="email" id="bd-email" placeholder="Enter your email">
+        <input type="hidden" value="1" name="embed"></input>
+        <button type="submit" class="button">Subscribe</button>
+      </form>
+
     </article>
     <footer>
      <a href="https://www.instagram.com/yusefmubeen/" title="Instagram">Instagram</a> <span class="sep">|</span> <a href="https://www.linkedin.com/in/yusefmubeen/" title="LinkedIn">LinkedIn</a> <span class="sep">|</span> <a href="https://github.com/yusefmubeen/yusefmubeen.com" title="GitHub">Source</a> <span class="hide-on-small"></span>
    </footer>
  </main>
 
- <script src="/js/yusefmubeen.js"></script>
- <script>
-  var app = document.getElementById('type');
-
-  var typewriter = new Typewriter(app, {
-    loop: true
-  });
-
-  typewriter.typeString('photographs')
-  .pauseFor(1500)
-  .deleteAll()
-  .typeString('websites')
-  .pauseFor(1500)
-  .deleteAll()
-  .typeString('prints')
-  .pauseFor(1500)
-  .deleteAll()
-  .typeString('apps')
-  .pauseFor(1500)
-  .start();
-</script>
 <script>
   (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
    function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
