@@ -5,6 +5,7 @@ html {
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
   -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
 }
 
 body {
@@ -19,7 +20,7 @@ body {
 /* Layout */
 header {
   padding: 7%;
-  background-image: url("img/bg.jpg");
+  background-image: url("https://ik.imagekit.io/yusefmubeen/bg_YJN0a1Uh3.jpg");
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -58,8 +59,12 @@ p {
 }
 
 /* Links */
-a, a:hover {
-  text-decoration: none;
+a {
+  color: gray;
+}
+
+a:hover {
+  color: white;
 }
 
 footer a {
@@ -130,6 +135,7 @@ h1 {
 
 
 .button {
+  text-decoration: none;
   color: white;
   display: inline-block;
   margin: 1em 0;
@@ -224,16 +230,6 @@ footer {
 
 @media screen and (min-width : 480px), screen and (min-height : 960px) {
 
-  .logomark {
-    /* Revert image color */
-    -webkit-filter: invert(0);
-    filter: invert(0);
-  }
-
-  h1 {
-    color: black;
-  }
-
 }
 
 @media screen and (min-width : 480px) and (min-height : 768px) {
@@ -262,8 +258,4 @@ footer {
     width: auto;
   }
 
-}
-
-#motherland header {
-  background-image: url("img/bg-motherland.jpg");
 }
